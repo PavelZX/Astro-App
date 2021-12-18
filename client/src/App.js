@@ -12,7 +12,7 @@ function App() {
   const [astronauts, setAstronauts] = React.useState({});
 
   React.useEffect(() => {
-    fetch("/astronaut/get-astronauts")
+    fetch("http://localhost:3001/astronaut/get-astronauts")
       .then((res) => res.json())
       .then((data) => {
 
